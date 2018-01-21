@@ -1,8 +1,11 @@
 import { NewClass } from './newCLass'
 import { EOL } from 'os';
-
+import $ = require("jquery");
 
 export function startClass(element: HTMLElement) {
+    $(function(){ 
+        alert('Hello'); 
+    });
     let renderer = new NewClass(element, "test");
     renderer.render();
 }
